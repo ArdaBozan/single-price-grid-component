@@ -154,7 +154,7 @@ button{
     border: 0;
     background-color: var(--clr-button);
     color: var(--clr-white-text);
-    padding: 0;
+    padding: .8em 0;
     border-radius: 1vh;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -180,6 +180,7 @@ body{
     grid-template-columns: 1fr 1fr;
     border-radius: 1.2vh;
     overflow: hidden;
+    max-width: 40.1em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
@@ -187,26 +188,23 @@ body{
 .container .container-2,
 .container .container-3{
     display: grid;
-    padding: 2em;
+    padding: 2.5em;
 }
 
 .container-span{
     background-color: var(--clr-box-1);
     grid-column: span 2;
-    max-width: 65ch;
     gap: 1em;
 }
 
 .container-span :last-child{
     display: grid;
     gap: .5em;
-    padding-bottom: .3em;
 }
 
 .container-2{
     background-color: var(--clr-box-2);
-    max-width: 19.2884375em;
-    min-width: 19.2884375em;
+    gap: 1.5em;
 }
 
 .container-2 h2{
@@ -215,9 +213,6 @@ body{
 
 .container-3{
     background-color: var(--clr-box-3);
-    max-width: 32ch;
-    min-width: 19.2884375em;
-    gap: 1em;
 }
 
 .price-block{
